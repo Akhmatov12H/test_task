@@ -1,0 +1,10 @@
+[Unit]
+Description=Runs 'test' process monitoring every minute
+
+[Timer]
+OnCalendar=*:0/1
+Persistent=true
+Unit=test-monitor.service
+
+[Install]
+WantedBy=timers.target
